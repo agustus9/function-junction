@@ -4,12 +4,25 @@
  * construct available in Javascript.
  */
 
+const max = (x, y) => {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
 // ...
 
 /**
  * Define a function maxOfThree() that takes three
  * numbers as arguments and returns the largest of them.
  */
+
+ const maxOfThree = (x, y, z) => {
+  let xy = max(x, y);
+   return max(xy, z);
+ }
 
 // ...
 
@@ -18,6 +31,9 @@
  * arguments and computes the sum of those two numbers.
  */
 
+ const sum = (x,  y) => {
+   return x + y;
+ }
 // ...
 
 /*
@@ -25,12 +41,24 @@
  * all the numbers in an array.
  */
 
+ const sumOfArray = (arr) => {
+   let sum = 0;
+   for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+   }
+   return sum;
+ }
+
 // ...
 
 /**
  * Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
  */
+const isVowel = (letter) => {
+  let vowels = "aeiouAEIOU";
+  return vowels.includes(letter);
+}
 
 // ...
 
@@ -43,6 +71,12 @@
   * return the string "tothohisos isos fofunon".
   */
 
+  // const rovarspraket = (text) => {
+  //   let rovarspraketVar = text.toLowerCase();
+  //   let ro = "";
+
+  // }
+
 // ...
 
 /**
@@ -51,6 +85,13 @@
  * reverse("skoob") should return the
  * string "books".
  */
+
+ const reverse = (str) => {
+   let a = str.split('')
+   let b = a.reverse()
+   let c = b.join('')
+   return c;
+ }
 
 // ...
 
