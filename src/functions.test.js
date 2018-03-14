@@ -71,11 +71,11 @@ const isVowel = (letter) => {
   * return the string "tothohisos isos fofunon".
   */
 
-  // const rovarspraket = (text) => {
-  //   let rovarspraketVar = text.toLowerCase();
-  //   let ro = "";
+  const rovarspraket = (text) => {
+    let rovarspraketVar = text.toLowerCase();
+    let ro = "";
 
-  // }
+  }
 
 // ...
 
